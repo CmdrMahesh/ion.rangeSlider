@@ -1,29 +1,9 @@
-// Ion.RangeSlider
-// version 2.3.1 Build: 382
-// © Denis Ineshin, 2019
-// https://github.com/IonDen
-//
-// Project page:    http://ionden.com/a/plugins/ion.rangeSlider/en.html
-// GitHub page:     https://github.com/IonDen/ion.rangeSlider
-//
-// Released under MIT licence:
-// http://ionden.com/a/plugins/licence-en.html
-// =====================================================================================================================
 
-;(function(factory) {
-    if ((typeof jQuery === 'undefined' || !jQuery) && typeof define === "function" && define.amd) {
-        define(["jquery"], function (jQuery) {
-            return factory(jQuery, document, window, navigator);
-        });
-    } else if ((typeof jQuery === 'undefined' || !jQuery) && typeof exports === "object") {
-        factory(require("jquery"), document, window, navigator);
-    } else {
-        factory(jQuery, document, window, navigator);
-    }
-} (function ($, document, window, navigator, undefined) {
-    "use strict";
+jQuery(function($){
 
-    // =================================================================================================================
+    $ = jQuery;
+
+     // =================================================================================================================
     // Service
 
     var plugin_count = 0;
@@ -2445,5 +2425,4 @@
                 clearTimeout(id);
             };
     }());
-
-}));
+});
